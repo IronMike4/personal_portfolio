@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mikes Personal Portfolio Website</title>
+    <link rel="stylesheet" href="css/generalStyles.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/services.css" />
+    <link rel="stylesheet" href="css/portfolio.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/reviews.css" />
+    <link rel="stylesheet" href="css/copyright.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/99ee86a77b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/mike-logo1.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about" onclick="closemenu()">About</a></li>
+            <li><a href="#services" onclick="closemenu()">Services</a></li>
+            <li><a href="#portfolio" onclick="closemenu()">Portfolio</a></li>
+            <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h1>Hi, I'm <span>Michael</span><br />Mahachi From Zimbabwe</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- About section -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/mikeUser.jpeg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am an experienced QA Automation Engineer and Full Stack Web
+              Developer with a strong background in Python, C#, Java, and
+              JavaScript. My expertise extends to various testing frameworks
+              including Selenium, Appium, Cypress, Playwright, and NUnit. I have
+              a comprehensive skill set in testing mobile apps, desktop apps,
+              APIs, databases, and performance testing. Additionally, I am
+              proficient in using tools such as Jenkins for continuous
+              integration, Docker for containerization, and Git for version
+              control. My experience also includes working with cloud platforms
+              like AWS and Azure, implementing automated test scripts, and
+              developing robust test strategies to ensure high-quality software
+              delivery.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Automated Testing</span><br />Building test Frameworks
+                </li>
+                <li><span>Web Development</span><br />Web app Development</li>
+                <li>
+                  <span>App Development</span><br />Building Android/iOS apps
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2023 - Current</span><br />QA Engineer at GVI.</li>
+                <li>
+                  <span>2021 -2022</span><br />Software Development Engineer in
+                  Test at Derivco.
+                </li>
+                <li>
+                  <span>2020-2021</span><br />Software Quality Engineer at
+                  Skrmiish.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2020</span><br />BCom in Business Informatics from
+                  UNISA.
+                </li>
+                <li>
+                  <span>2020</span><br />ISTQB Foundation Level from SASTQB.
+                </li>
+                <li>
+                  <span>2024</span><br />Fullstack Web Development from
+                  HyperionDev.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services section -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>
+              I offer comprehensive web development services, creating robust,
+              scalable, and user-friendly websites and web applications.
+              Utilizing the latest technologies and frameworks, I ensure your
+              digital presence is not only visually appealing but also performs
+              seamlessly across various devices and platforms. Whether you need
+              a simple landing page or a complex web application, I deliver
+              solutions tailored to your unique needs and business goals.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h2>App Development</h2>
+            <p>
+              I provide end-to-end app development services, crafting
+              high-performance mobile and desktop applications that meet your
+              specific requirements. With expertise in various platforms and
+              programming languages, I develop intuitive and responsive apps
+              that offer a seamless user experience. From initial concept to
+              deployment and maintenance, I ensure your app is functional,
+              reliable, and optimized for success in today’s competitive market.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-laptop-code"></i>
+            <h2>Automated Tests</h2>
+            <p>
+              I specialize in developing meticulous automated testing solutions
+              to ensure the reliability and efficiency of your applications.
+              Utilizing advanced tools like Selenium, Appium, Cypress, and
+              Playwright, I create comprehensive test suites for functional,
+              regression, and performance testing. My expertise ensures rapid
+              bug detection, accelerated delivery cycles, and improved software
+              quality, enabling seamless deployment of robust applications.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonials section -->
+    <div class="testimonials">
+      <div class="inner"></div>
+      <h1>Testimonials</h1>
+      <div class="border"></div>
+
+      <div class="row">
+        <div class="col">
+          <div class="testimonial">
+            <img src="images/pic-1.jpg" alt="" />
+            <div class="name">Jack Man</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>
+              Michael built an outstanding website for our company. It's
+              visually stunning, easy to navigate, and perfectly reflects our
+              brand. We've seen a significant increase in customer engagement
+              since its launch. Highly recommend his work!
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="testimonial">
+            <img src="images/pic-2.jpeg" alt="" />
+            <div class="name">Marshall Eminem</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <p>
+              Thanks to Michael's thorough QA process, our website is now
+              running flawlessly. His attention to detail and methodical testing
+              ensured a smooth, bug-free launch. Our users are thrilled with the
+              performance and reliability.
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="testimonial">
+            <img src="images/pic-3.jpg" alt="" />
+            <div class="name">Jane Doe</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>
+              Michael's work on our new platform was exceptional. He not only
+              delivered a beautiful website but also ensured it was rigorously
+              tested and bug-free. The result is a robust and reliable site that
+              our users love.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio section -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/meal1.webp" />
+            <div class="layer">
+              <h3>Meal Ordering App</h3>
+              <p>
+                This App facilitates ordering of meals based on user-provided
+                ingredients. Users can select a main ingredient, fetch meals
+                associated with that ingredient, and place an order. The
+                application allows users to mark orders as complete and displays
+                current incomplete orders.
+              </p>
+              <a href="https://github.com/IronMike4/chefs_favourite_meal.git"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/meal2.jpg" />
+            <div class="layer">
+              <h3>Meal Ordering App</h3>
+              <p>
+                This App facilitates ordering of meals based on user-provided
+                ingredients. Users can select a main ingredient, fetch meals
+                associated with that ingredient, and place an order. The
+                application allows users to mark orders as complete and displays
+                current incomplete orders.
+              </p>
+              <a href="https://github.com/IronMike4/chefs_favourite_meal.git"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/meal3.jpeg" />
+            <div class="layer">
+              <h3>Meal Ordering App</h3>
+              <p>
+                This App facilitates ordering of meals based on user-provided
+                ingredients. Users can select a main ingredient, fetch meals
+                associated with that ingredient, and place an order. The
+                application allows users to mark orders as complete and displays
+                current incomplete orders.
+              </p>
+              <a href="https://github.com/IronMike4/chefs_favourite_meal.git"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/IronMike4" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-- Contact section -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> mikhach@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i> 0784666805</p>
+            <div class="social-icons">
+              <a href="https://facebook.com/"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://twitter.com/?lang=en"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="files/my-cv.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          © 2024 IronMike. Designed and developed with
+          <i class="fa-solid fa-heart"></i> by IronMike
+        </p>
+      </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
