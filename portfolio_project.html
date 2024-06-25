@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- Title of the website -->
     <title>Mikes Personal Portfolio Website</title>
+    <!-- External CSS stylesheets for different sections -->
     <link rel="stylesheet" href="css/generalStyles.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/about.css" />
@@ -12,17 +14,21 @@
     <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/reviews.css" />
     <link rel="stylesheet" href="css/copyright.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mediaQueries.css" />
+    <!-- Font Awesome icons -->
     <script
       src="https://kit.fontawesome.com/99ee86a77b.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
+    <!-- Header section -->
     <div id="header">
       <div class="container">
+        <!-- Navigation bar -->
         <nav>
           <img src="images/mike-logo1.png" class="logo" />
+          <!-- Side menu links -->
           <ul id="sidemenu">
             <li><a href="#header">Home</a></li>
             <li><a href="#about" onclick="closemenu()">About</a></li>
@@ -31,8 +37,10 @@
             <li><a href="#contact" onclick="closemenu()">Contact</a></li>
             <i class="fas fa-times" onclick="closemenu()"></i>
           </ul>
+          <!-- Hamburger menu icon -->
           <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
+         <!-- Header text -->
         <div class="header-text">
           <p>Web Developer</p>
           <h1>Hi, I'm <span>Michael</span><br />Mahachi From Zimbabwe</h1>
@@ -64,6 +72,7 @@
               delivery.
             </p>
 
+             <!-- Tabs for skills, experience, and education -->
             <div class="tab-titles">
               <p class="tab-links active-link" onclick="opentab('skills')">
                 Skills
@@ -73,6 +82,7 @@
               </p>
               <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
+            <!-- Content for each tab -->
             <div class="tab-contents active-tab" id="skills">
               <ul>
                 <li>
@@ -121,6 +131,7 @@
     <div id="services">
       <div class="container">
         <h1 class="sub-title">My Services</h1>
+        <!-- List of services provided -->
         <div class="services-list">
           <div>
             <i class="fa-solid fa-code"></i>
@@ -175,6 +186,7 @@
       <div class="border"></div>
 
       <div class="row">
+        <!-- Testimonial 1 -->
         <div class="col">
           <div class="testimonial">
             <img src="images/pic-1.jpg" alt="" />
@@ -194,6 +206,7 @@
             </p>
           </div>
         </div>
+        <!-- Testimonial 2 -->
         <div class="col">
           <div class="testimonial">
             <img src="images/pic-2.jpeg" alt="" />
@@ -213,6 +226,7 @@
             </p>
           </div>
         </div>
+        <!-- Testimonial 3 -->
         <div class="col">
           <div class="testimonial">
             <img src="images/pic-3.jpg" alt="" />
@@ -239,6 +253,7 @@
     <div id="portfolio">
       <div class="container">
         <h1 class="sub-title">My Work</h1>
+        <!-- List of portfolio items -->
         <div class="work-list">
           <div class="work">
             <img src="images/meal1.webp" />
@@ -251,7 +266,7 @@
                 application allows users to mark orders as complete and displays
                 current incomplete orders.
               </p>
-              <a href="https://github.com/IronMike4/chefs_favourite_meal.git"
+              <a href="chefs_favourite_meal.html"
                 ><i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
             </div>
@@ -267,7 +282,7 @@
                 application allows users to mark orders as complete and displays
                 current incomplete orders.
               </p>
-              <a href="https://github.com/IronMike4/chefs_favourite_meal.git"
+              <a href="chefs_favourite_meal.html"
                 ><i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
             </div>
@@ -283,12 +298,13 @@
                 application allows users to mark orders as complete and displays
                 current incomplete orders.
               </p>
-              <a href="https://github.com/IronMike4/chefs_favourite_meal.git"
+              <a href="chefs_favourite_meal.html"
                 ><i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
             </div>
           </div>
         </div>
+        <!-- Button to see more work -->
         <a href="https://github.com/IronMike4" class="btn">See more</a>
       </div>
     </div>
@@ -299,8 +315,10 @@
         <div class="row">
           <div class="contact-left">
             <h1 class="sub-title">Contact Me</h1>
+             <!-- Contact information -->
             <p><i class="fa-solid fa-paper-plane"></i> mikhach@gmail.com</p>
             <p><i class="fa-solid fa-square-phone"></i> 0784666805</p>
+            <!-- Social media icons -->
             <div class="social-icons">
               <a href="https://facebook.com/"
                 ><i class="fa-brands fa-facebook"></i
@@ -315,9 +333,11 @@
                 ><i class="fa-brands fa-linkedin"></i
               ></a>
             </div>
+            <!-- Button to download CV -->
             <a href="files/my-cv.pdf" download class="btn btn2">Download CV</a>
           </div>
           <div class="contact-right">
+            <!-- Contact form -->
             <form name="submit-to-google-sheet">
               <input type="text" name="Name" placeholder="Your Name" required />
               <input
@@ -337,6 +357,7 @@
           </div>
         </div>
       </div>
+      <!-- Copyright section -->
       <div class="copyright">
         <p>
           © 2024 IronMike. Designed and developed with
@@ -345,6 +366,7 @@
       </div>
     </div>
 
-    <script src="js/scripts.js"></script>
+     <!-- JavaScript file -->
+    <script src="js/portfolio_project.js"></script>
   </body>
 </html>
