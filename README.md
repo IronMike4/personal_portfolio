@@ -6,7 +6,7 @@ Chef's Favourite Meals is a JavaScript application that interacts with The Meal 
 
 ### How to Use
 
-1. Open the `chefsFavouriteMeal.html` file in any web browser.
+1. Open the `chefs_favourite_meal.html` file in any web browser.
 2. Click on the "Take Order" button to begin placing an order.
 3. Enter a main ingredient when prompted.
 4. The application will randomly select a meal from the retrieved list based on the ingredient.
@@ -50,7 +50,7 @@ Mike's Personal Portfolio Website is a comprehensive showcase of Michael Mahachi
 
 ### How to Use
 
-1. Open the `portfolio.html` file in any web browser.
+1. Open the `portfolio_project.html` file in any web browser.
 2. Navigate through different sections using the top navigation menu:
    - **Home**: Introduction and welcome message.
    - **About**: Information about Michael's skills, experience, and education.
